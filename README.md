@@ -43,7 +43,16 @@ Only one copy of any symbol exists at a given time, so they save memory;
 
 #other ways of writing hash
 
-```
+```ruby
+
   dog = { name: "hip" , type: "puppy"  }
+  
+```
+
+#select Method 
+
+```ruby
+  dog.select { |key, value| value == "hip" } # returns {name: hip}
+  
   
 ```
