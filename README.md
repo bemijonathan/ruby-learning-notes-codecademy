@@ -56,3 +56,17 @@ Only one copy of any symbol exists at a given time, so they save memory;
   
   
 ```
+
+#response Method
+
+Call and Response
+Remember when we mentioned that symbols are awesome for referencing method names? Well, .respond_to? takes a symbol and returns true if an object can receive that method and false otherwise.
+
+```ruby 
+[1, 2, 3].respond_to?(:push) # true
+
+[1, 2, 3].respond_to?(:to_sym) #false
+
+4.respond_to?(:next) #true
+
+```
